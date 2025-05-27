@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class MazeTest{
 
+    /*Testar att antalet kolonner och rader stämmer*/
     @Test
     void testNumColsRows() throws IOException{
 
@@ -17,6 +18,16 @@ public class MazeTest{
             int cols = 12;
             assertEquals(cols, m.getNumColumns());
             assertEquals(rows, m.getNumRows());
+
+    }
+
+    /*Testar att isGoal hittar rätt mål*/
+    @Test
+    void testIsGoal() throws IOException{
+        Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
+        Maze m=new Maze(s);
+        Position goal = new Position(8,6);
+        assertTrue(m.isGoal(goal));
 
     }
 

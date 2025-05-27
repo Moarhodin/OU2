@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till tester för hashning, att hashCode returnerar samma hashning för samma position och olika hashning för olika positioner.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MazeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/maze.txt" afterDir="false" />
+    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Testar att isMovable returnerar true för lediga-, start- och målpositoner, samtf falskt för väggar.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PositionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PositionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MazeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MazeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,31 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1748359918322</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="Lagt till MazeTest, ttestar antalet colonner och rader. Fått till så att den läser in mazen korrekt.">
+      <created>1748363127553</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1748363127553</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Lagt till test för att se att den hittar rätt mål.">
+      <created>1748363879297</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1748363879297</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Lagt till test för att se att isGoal inte retturnerar true för en position som inte är mål.">
+      <created>1748364057788</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1748364057788</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Testar att isMovable returnerar true för lediga-, start- och målpositoner, samtf falskt för väggar.">
+      <created>1748366017817</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1748366017817</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +138,10 @@
     <MESSAGE value="Nytt tst för GetPosToNorth fungerar som de ska. Test OK" />
     <MESSAGE value="Lagt till texter till de nya testerna." />
     <MESSAGE value="Lagt till tester för hashning, att hashCode returnerar samma hashning för samma position och olika hashning för olika positioner." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till tester för hashning, att hashCode returnerar samma hashning för samma position och olika hashning för olika positioner." />
+    <MESSAGE value="Lagt till MazeTest, ttestar antalet colonner och rader. Fått till så att den läser in mazen korrekt." />
+    <MESSAGE value="Lagt till test för att se att den hittar rätt mål." />
+    <MESSAGE value="Lagt till test för att se att isGoal inte retturnerar true för en position som inte är mål." />
+    <MESSAGE value="Testar att isMovable returnerar true för lediga-, start- och målpositoner, samtf falskt för väggar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Testar att isMovable returnerar true för lediga-, start- och målpositoner, samtf falskt för väggar." />
   </component>
 </project>

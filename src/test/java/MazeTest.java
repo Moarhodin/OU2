@@ -65,6 +65,18 @@ public class MazeTest{
 
     }
 
+    /*Test för att testa att getStart returnerar rätt start position*/
+    @Test
+    void testGetStart() throws IOException{
+        Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
+        Maze m=new Maze(s);
+        Position start = new Position(1,0);
+        assertEquals(start, m.getStart());
+
+    }
+
+
+
 
 
 

@@ -32,8 +32,19 @@ public class RandomRobotTest{
             robot.move();
         }
         assertTrue(robot.hasReachedGoal());
-
     }
+
+    /*Testar att roboten inte har gått i mål efter en förslyttning*/
+    @Test
+    void testHasReachedGoalRandomRobot() throws IOException{
+
+        Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
+        Maze m=new Maze(s);
+        RandomRobot robot= new RandomRobot(m);
+        robot.move();
+        assertFalse(robot.hasReachedGoal());
+    }
+
 
 
 

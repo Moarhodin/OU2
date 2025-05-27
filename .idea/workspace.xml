@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till test för att testa att RandomRobot har ej gått i mål efter 1 förflyttning.">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/maze2.txt" afterDir="false" />
+    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till test för att testa att RandomRobot går i mål i labyrint utan innerväggar.">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/maze3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RandomRobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RandomRobotTest.java" afterDir="false" />
     </list>
@@ -165,7 +165,13 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1748368232396</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="Lagt till test för att testa att RandomRobot går i mål i labyrint utan innerväggar.">
+      <created>1748368949171</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1748368949171</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +191,7 @@
     <MESSAGE value="Lagt till test för att testa att RandomRobot har gått i mål efter 1000 förflyttningar." />
     <MESSAGE value="Lagt till test för att testa att RandomRobot har gått i mål efter 1 förflyttning." />
     <MESSAGE value="Lagt till test för att testa att RandomRobot har ej gått i mål efter 1 förflyttning." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till test för att testa att RandomRobot har ej gått i mål efter 1 förflyttning." />
+    <MESSAGE value="Lagt till test för att testa att RandomRobot går i mål i labyrint utan innerväggar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt till test för att testa att RandomRobot går i mål i labyrint utan innerväggar." />
   </component>
 </project>

@@ -61,6 +61,27 @@ public class RandomRobotTest{
         assertTrue(robot.hasReachedGoal());
     }
 
+    /*Testar att robot backar i labyrint med återvändsgränd*/
+    @Test
+    void testMazeTurnBack() throws IOException{
+
+        Scanner s = new Scanner(new File("src/test/resources/maze3.txt"));
+        Maze m=new Maze(s);
+        RandomRobot robot= new RandomRobot(m);
+
+        Position p1= new Position(1,0);
+        assertEquals(p1, robot.getPosition());
+
+        robot.move();
+        Position p2= new Position(1,1);
+        assertEquals(p2, robot.getPosition());
+
+        robot.move();
+        assertEquals(p1, robot.getPosition());
+    }
+
+
+
 
 
 

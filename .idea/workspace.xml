@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till samma robot test i LeftHandRuleRobot.">
+    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln.">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/maze4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LeftHandRuleRobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeftHandRuleRobotTest.java" afterDir="false" />
     </list>
@@ -182,7 +183,13 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1748369873707</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln.">
+      <created>1748371084618</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1748371084619</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -205,6 +212,7 @@
     <MESSAGE value="Lagt till test för att testa att RandomRobot går i mål i labyrint utan innerväggar." />
     <MESSAGE value="Lagt till test för att testa att RandomRobot backar i labyrint med återvändsgränd." />
     <MESSAGE value="Lagt till samma robot test i LeftHandRuleRobot." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till samma robot test i LeftHandRuleRobot." />
+    <MESSAGE value="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln." />
+    <option name="LAST_COMMIT_MESSAGE" value="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln." />
   </component>
 </project>

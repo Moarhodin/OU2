@@ -8,4 +8,6 @@ public class PositionTest{
         assertEquals(1, p.getX());
         assertEquals(1, p.getY());
     }
+
+
 }

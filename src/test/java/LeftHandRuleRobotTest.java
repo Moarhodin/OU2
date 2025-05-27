@@ -5,9 +5,18 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Test the methods in the LeftHandRuleRobot class.
+ * @name LeftHandRuleRobbotTest
+ * @author ens21mrn
+ * @version 2 2025-05-27
+ */
+
 public class LeftHandRuleRobotTest{
 
-    /*Kollar att roboten startar på start positionen*/
+    /**
+     * Tests that the LeftHandRuleRobot starts at the startposition in the maze.
+     */
     @Test
     void testGetPositionLeftHandRuleRobot() throws IOException{
 
@@ -20,7 +29,9 @@ public class LeftHandRuleRobotTest{
 
     }
 
-    /*Testar att roboten har gått i mål efter 1000 förflytttningar*/
+    /**
+     * Tests that the LeftHanndRuleRobot has reached goal.
+     */
     @Test
     void testHasReachedGoalLeftHandRuleRobot() throws IOException{
 
@@ -34,7 +45,9 @@ public class LeftHandRuleRobotTest{
         assertTrue(robot.hasReachedGoal());
     }
 
-    /*Testar att roboten inte har gått i mål efter en förslyttning*/
+    /**
+     * Tests that the LeftHandRuleRobot has not reached goal after one movement.
+     */
     @Test
     void testHasReachedGoalLeftHandRuleRobotFalse() throws IOException{
 
@@ -45,8 +58,9 @@ public class LeftHandRuleRobotTest{
         assertFalse(robot.hasReachedGoal());
     }
 
-
-    /*Testar atttt robot går i mål i labyrint utan innerväggar*/
+    /**
+     * Tests that the LeftHandRuleRobot reaches goal in maze without inner walls.
+     */
     @Test
     void testMazeNoInternalWallLeftHandRuleRobot() throws IOException{
 
@@ -61,7 +75,9 @@ public class LeftHandRuleRobotTest{
         assertTrue(robot.hasReachedGoal());
     }
 
-    /*Testar att robot backar i labyrint med återvändsgränd*/
+    /**
+     * Tests that the LeftHandRuleRobot steps back in a dead-end maze.
+     */
     @Test
     void testMazeTurnBackLeftHandRuleRobot() throws IOException{
 
@@ -80,7 +96,9 @@ public class LeftHandRuleRobotTest{
         assertEquals(p1, robot.getPosition());
     }
 
-    /*Testar att robot följer vänsterhandsregeln*/
+    /**
+     * Tests that the LeftHandRuleRobot follows the lefthandrule when choosing the next position.
+     */
     @Test
     void testRobotFollowLeftWall() throws IOException{
 
@@ -110,6 +128,11 @@ public class LeftHandRuleRobotTest{
 
     /*Testa att roboten följer reglerna när den inte har en väggg i närheten
     (går rakt fram tills den hittar en vägg)*/
+
+    /**
+     * Tests that the LeftHandRuleRobot  follows the rules in a maze without having
+     * a wall close by (moving forward  untill it finds a wall).
+     */
     @Test
     void testRobotStartInTheMiddle() throws IOException{
 

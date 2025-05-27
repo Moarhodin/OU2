@@ -27,6 +27,15 @@ public class PositionTest{
         assertNotEquals(p1, p2);
     }
 
+    @Test
+    void testGetPosToNorth(){
+        Position p1= new Position(2,2);
+        Position p2=new Position(2,1);
+        assertEquals(p2, p1.getPosToNorth());
+    }
+
+
+
 
 
 

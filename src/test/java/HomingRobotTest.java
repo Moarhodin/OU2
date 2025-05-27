@@ -5,9 +5,18 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Test the methods in the HomingRobot class.
+ * @name HomingRobotTest
+ * @author ens21mrn
+ * @version 2 2025-05-27
+ */
+
 public class HomingRobotTest{
 
-    /*Kollar att roboten startar på start positionen*/
+    /**
+     * Tests that the HomingRobot starts at the startposition in the maze.
+     */
     @Test
     void testGetPositionHominggRobot() throws IOException{
 
@@ -20,7 +29,9 @@ public class HomingRobotTest{
 
     }
 
-    /*Testar att roboten har gått i mål efter 1000 förflytttningar*/
+    /**
+     * Tests that the HomingRobot has reached goal.
+     */
     @Test
     void testHasReachedGoalHomingRobot() throws IOException{
 
@@ -34,7 +45,9 @@ public class HomingRobotTest{
         assertTrue(robot.hasReachedGoal());
     }
 
-    /*Testar att roboten inte har gått i mål efter en förslyttning*/
+    /**
+     * Tests that the HomingRobot has not reached goal after one movement.
+     */
     @Test
     void testHasReachedGoalHomingRobotFalse() throws IOException{
 
@@ -45,8 +58,9 @@ public class HomingRobotTest{
         assertFalse(robot.hasReachedGoal());
     }
 
-
-    /*Testar atttt robot går i mål i labyrint utan innerväggar*/
+    /**
+     * Tests that the HomingRobot reaches goal in maze without inner walls.
+     */
     @Test
     void testMazeNoInternalWallHomingRobot() throws IOException{
 
@@ -61,7 +75,9 @@ public class HomingRobotTest{
         assertTrue(robot.hasReachedGoal());
     }
 
-    /*Testar att robot backar i labyrint med återvändsgränd*/
+    /**
+     * Tests that the HomingRobot steps back in a dead-end maze.
+     */
     @Test
     void testMazeTurnBackHomingRobot() throws IOException{
 
@@ -80,8 +96,9 @@ public class HomingRobotTest{
         assertEquals(p1, robot.getPosition());
     }
 
-
-    /*Testar att robot väljer positionen närmast mål i labyrint*/
+    /**
+     * Tests that the HomingRobot chooses the position closest to goal in a maze.
+     */
     @Test
     void testRobotMovesToGoal() throws IOException{
 
@@ -117,7 +134,10 @@ public class HomingRobotTest{
         assertEquals(p7, robot.getPosition());
     }
 
-    /*Testar att robot väljer positionen närmast mål i labyrint vid start i mitten*/
+    /**
+     * Tests that the HomingRobot chooses the position closest to goal in a maze
+     * when starting in the middle.
+     */
     @Test
     void testHomingRobotStartInTheMiddle() throws IOException{
 
@@ -142,6 +162,4 @@ public class HomingRobotTest{
 
         assertTrue(robot.hasReachedGoal());
     }
-
-
 }

@@ -5,15 +5,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class RandomRobotTest{
+public class LeftHandRuleRobotTest{
 
     /*Kollar att roboten startar på start positionen*/
     @Test
-    void testGetPositionRandomRobot() throws IOException{
+    void testGetPositionLeftHandRuleRobot() throws IOException{
 
         Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
         Maze m=new Maze(s);
-        RandomRobot robot= new RandomRobot(m);
+        LeftHandRuleRobot robot= new LeftHandRuleRobot(m);
 
         Position p = new Position(1,0);
         assertEquals(p, robot.getPosition());
@@ -22,11 +22,11 @@ public class RandomRobotTest{
 
     /*Testar att roboten har gått i mål efter 1000 förflytttningar*/
     @Test
-    void testHasReachedGoalRandomRobot() throws IOException{
+    void testHasReachedGoalLeftHandRuleRobot() throws IOException{
 
         Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
         Maze m=new Maze(s);
-        RandomRobot robot= new RandomRobot(m);
+        LeftHandRuleRobot robot= new LeftHandRuleRobot(m);
 
         while(!(robot.hasReachedGoal())){
             robot.move();
@@ -36,11 +36,11 @@ public class RandomRobotTest{
 
     /*Testar att roboten inte har gått i mål efter en förslyttning*/
     @Test
-    void testHasReachedGoalRandomRobotFalse() throws IOException{
+    void testHasReachedGoalLeftHandRuleRobotFalse() throws IOException{
 
         Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
         Maze m=new Maze(s);
-        RandomRobot robot= new RandomRobot(m);
+        LeftHandRuleRobot robot= new LeftHandRuleRobot(m);
         robot.move();
         assertFalse(robot.hasReachedGoal());
     }
@@ -48,11 +48,11 @@ public class RandomRobotTest{
 
     /*Testar atttt robot går i mål i labyrint utan innerväggar*/
     @Test
-    void testMazeNoInternalWall() throws IOException{
+    void testMazeNoInternalWallLeftHandRuleRobot() throws IOException{
 
         Scanner s = new Scanner(new File("src/test/resources/maze2.txt"));
         Maze m=new Maze(s);
-        RandomRobot robot= new RandomRobot(m);
+        LeftHandRuleRobot robot= new LeftHandRuleRobot(m);
 
         while(!(robot.hasReachedGoal())){
             robot.move();
@@ -63,11 +63,11 @@ public class RandomRobotTest{
 
     /*Testar att robot backar i labyrint med återvändsgränd*/
     @Test
-    void testMazeTurnBack() throws IOException{
+    void testMazeTurnBackLeftHandRuleRobot() throws IOException{
 
         Scanner s = new Scanner(new File("src/test/resources/maze3.txt"));
         Maze m=new Maze(s);
-        RandomRobot robot= new RandomRobot(m);
+        LeftHandRuleRobot robot= new LeftHandRuleRobot(m);
 
         Position p1= new Position(1,0);
         assertEquals(p1, robot.getPosition());

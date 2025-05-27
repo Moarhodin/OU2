@@ -117,5 +117,31 @@ public class HomingRobotTest{
         assertEquals(p7, robot.getPosition());
     }
 
+    /*Testar att robot väljer positionen närmast mål i labyrint vid start i mitten*/
+    @Test
+    void testHomingRobotStartInTheMiddle() throws IOException{
+
+        Scanner s = new Scanner(new File("src/test/resources/maze4.txt"));
+        Maze m=new Maze(s);
+        HomingRobot robot= new HomingRobot(m);
+
+        Position p1= new Position(3,2);
+        assertEquals(p1, robot.getPosition());
+
+        robot.move();
+        Position p2= new Position(3,3);
+        assertEquals(p2, robot.getPosition());
+
+        robot.move();
+        Position p3= new Position(2,3);
+        assertEquals(p3, robot.getPosition());
+
+        robot.move();
+        Position p4= new Position(2,4);
+        assertEquals(p4, robot.getPosition());
+
+        assertTrue(robot.hasReachedGoal());
+    }
+
 
 }

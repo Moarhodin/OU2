@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln när den inte har en vägg i nänrheten, dvs går rakt fram tills denn hittar vägg och följer sedan den med vänster hand.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomingRobotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LeftHandRuleRobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeftHandRuleRobotTest.java" afterDir="false" />
+    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="HomingRobot laggt till gemensamma tester för robot.Testa att väljer positionen närmast mål vid flera val.">
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomingRobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomingRobotTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,13 @@
       <option name="presentableId" value="LOCAL−00023" />
       <updated>1748371941511</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL−00024" summary="HomingRobot laggt till gemensamma tester för robot.Testa att väljer positionen närmast mål vid flera val.">
+      <created>1748372605039</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1748372605039</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,6 +224,7 @@
     <MESSAGE value="Lagt till samma robot test i LeftHandRuleRobot." />
     <MESSAGE value="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln." />
     <MESSAGE value="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln när den inte har en vägg i nänrheten, dvs går rakt fram tills denn hittar vägg och följer sedan den med vänster hand." />
-    <option name="LAST_COMMIT_MESSAGE" value="LeftHandRuleRobot testa att roboten följer vänsterhandsregeln när den inte har en vägg i nänrheten, dvs går rakt fram tills denn hittar vägg och följer sedan den med vänster hand." />
+    <MESSAGE value="HomingRobot laggt till gemensamma tester för robot.Testa att väljer positionen närmast mål vid flera val." />
+    <option name="LAST_COMMIT_MESSAGE" value="HomingRobot laggt till gemensamma tester för robot.Testa att väljer positionen närmast mål vid flera val." />
   </component>
 </project>

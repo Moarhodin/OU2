@@ -59,6 +59,25 @@ public class PositionTest{
         assertEquals(p2, p1.getPosToWest());
     }
 
+    /*Testar att hashCode returerar samma hashning för samma position*/
+    @Test
+    void testHashCodeTrue(){
+        Position p1=new Position(1,1);
+        Position p2=new Position(1,1);
+
+        assertEquals(p1,p2);
+        assertEquals(p1.hashCode(), p2.hashCode());
+    }
+
+    /*Testar att hashCode ej returerar samma hashning för olika positioner*/
+    @Test
+    void testHashCodeFalse(){
+        Position p1=new Position(1,1);
+        Position p2=new Position(2,2);
+
+        assertNotEquals(p1,p2);
+        assertNotEquals(p1.hashCode(), p2.hashCode());
+    }
 
 
 

@@ -79,4 +79,36 @@ public class LeftHandRuleRobotTest{
         robot.move();
         assertEquals(p1, robot.getPosition());
     }
+
+    /*Testar att robot följer vänsterhandsregeln*/
+    @Test
+    void testRobotFollowLeftWall() throws IOException{
+
+        Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
+        Maze m=new Maze(s);
+        LeftHandRuleRobot robot= new LeftHandRuleRobot(m);
+
+        Position p1= new Position(1,0);
+        assertEquals(p1, robot.getPosition());
+
+        robot.move();
+        Position p2= new Position(1,1);
+        assertEquals(p2, robot.getPosition());
+
+        robot.move();
+        Position p3= new Position(2,1);
+        assertEquals(p3, robot.getPosition());
+
+        robot.move();
+        Position p4= new Position(3,1);
+        assertEquals(p4, robot.getPosition());
+
+        robot.move();
+        Position p5= new Position(4,1);
+        assertEquals(p5, robot.getPosition());
+    }
+
+
+
+
 }

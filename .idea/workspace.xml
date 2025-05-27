@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till test för att testa att RandomRobot backar i labyrint med återvändsgränd.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/LeftHandRuleRobotTest.java" afterDir="false" />
+    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till samma robot test i LeftHandRuleRobot.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RandomRobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RandomRobotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LeftHandRuleRobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LeftHandRuleRobotTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +176,13 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1748369520654</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="Lagt till samma robot test i LeftHandRuleRobot.">
+      <created>1748369873707</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1748369873707</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -199,6 +204,7 @@
     <MESSAGE value="Lagt till test för att testa att RandomRobot har ej gått i mål efter 1 förflyttning." />
     <MESSAGE value="Lagt till test för att testa att RandomRobot går i mål i labyrint utan innerväggar." />
     <MESSAGE value="Lagt till test för att testa att RandomRobot backar i labyrint med återvändsgränd." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till test för att testa att RandomRobot backar i labyrint med återvändsgränd." />
+    <MESSAGE value="Lagt till samma robot test i LeftHandRuleRobot." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt till samma robot test i LeftHandRuleRobot." />
   </component>
 </project>

@@ -5,9 +5,18 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Test the methods in the RandomRobot class.
+ * @name RandomRobotTest
+ * @author ens21mrn
+ * @version 2 2025-05-27
+ */
+
 public class RandomRobotTest{
 
-    /*Kollar att roboten startar på start positionen*/
+    /**
+     * Tests that the RandomRobot starts at the startposition in the maze.
+     */
     @Test
     void testGetPositionRandomRobot() throws IOException{
 
@@ -20,7 +29,9 @@ public class RandomRobotTest{
 
     }
 
-    /*Testar att roboten har gått i mål efter 1000 förflytttningar*/
+    /**
+     * Tests that the RandomRobot has reached goal.
+     */
     @Test
     void testHasReachedGoalRandomRobot() throws IOException{
 
@@ -34,7 +45,9 @@ public class RandomRobotTest{
         assertTrue(robot.hasReachedGoal());
     }
 
-    /*Testar att roboten inte har gått i mål efter en förslyttning*/
+    /**
+     * Tests that the RanndomRobot has not reached goal after one movement.
+     */
     @Test
     void testHasReachedGoalRandomRobotFalse() throws IOException{
 
@@ -46,7 +59,9 @@ public class RandomRobotTest{
     }
 
 
-    /*Testar atttt robot går i mål i labyrint utan innerväggar*/
+    /**
+     * Tests that the RandomRobot reaches goal in maze without inner walls.
+     */
     @Test
     void testMazeNoInternalWall() throws IOException{
 
@@ -61,7 +76,9 @@ public class RandomRobotTest{
         assertTrue(robot.hasReachedGoal());
     }
 
-    /*Testar att robot backar i labyrint med återvändsgränd*/
+    /**
+     * Tests that the RanndomRobot steps back in a dead-end maze.
+     */
     @Test
     void testMazeTurnBack() throws IOException{
 

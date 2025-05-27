@@ -27,12 +27,38 @@ public class PositionTest{
         assertNotEquals(p1, p2);
     }
 
+    /*Testar att GetPosToNorth returnerar positionen till norr (y-1)*/
     @Test
     void testGetPosToNorth(){
         Position p1= new Position(2,2);
         Position p2=new Position(2,1);
         assertEquals(p2, p1.getPosToNorth());
     }
+
+    /*Testar att GetPosToSouth returnerar positionen till norr (y+1)*/
+    @Test
+    void testGetPosToSouth(){
+        Position p1= new Position(2,2);
+        Position p2=new Position(2,3);
+        assertEquals(p2, p1.getPosToSouth());
+    }
+
+    /*Testar att GetPosToEast returnerar positionen till öst (x+1)*/
+    @Test
+    void testGetPosToEast(){
+        Position p1= new Position(2,2);
+        Position p2=new Position(3,2);
+        assertEquals(p2, p1.getPosToEast());
+    }
+
+    /*Testar att GetPosToWest returnerar positionen till väst (x-1)*/
+    @Test
+    void testGetPosToWest(){
+        Position p1= new Position(2,2);
+        Position p2=new Position(1,2);
+        assertEquals(p2, p1.getPosToWest());
+    }
+
 
 
 

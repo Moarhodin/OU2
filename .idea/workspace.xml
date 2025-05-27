@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Testar att isMovable returnerar true för lediga-, start- och målpositoner, samtf falskt för väggar.">
+    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till test för att testa att getStart returnerar rätt start position.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MazeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MazeTest.java" afterDir="false" />
     </list>
@@ -128,7 +128,13 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1748366017817</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="Lagt till test för att testa att getStart returnerar rätt start position.">
+      <created>1748366434091</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1748366434091</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -142,6 +148,7 @@
     <MESSAGE value="Lagt till test för att se att den hittar rätt mål." />
     <MESSAGE value="Lagt till test för att se att isGoal inte retturnerar true för en position som inte är mål." />
     <MESSAGE value="Testar att isMovable returnerar true för lediga-, start- och målpositoner, samtf falskt för väggar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Testar att isMovable returnerar true för lediga-, start- och målpositoner, samtf falskt för väggar." />
+    <MESSAGE value="Lagt till test för att testa att getStart returnerar rätt start position." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt till test för att testa att getStart returnerar rätt start position." />
   </component>
 </project>

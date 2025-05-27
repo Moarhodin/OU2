@@ -75,6 +75,18 @@ public class MazeTest{
 
     }
 
+    /*Test för att testa att distanceToClosestGoal returnerar rätt avstånd till närmsta mål*/
+    @Test
+    void tesDistanceToClosestGoal() throws IOException{
+        Scanner s = new Scanner(new File("src/test/resources/maze.txt"));
+        Maze m=new Maze(s);
+        Position p = new Position(8,4);
+        int distanceToGoal=2;
+        assertEquals(distanceToGoal, m.distanceToClosestGoal(p));
+
+    }
+
+
 
 
 

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="hej">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PositionTest.java" afterDir="false" />
+    <list default="true" id="5fad4b9c-22bc-4056-baa9-7f36feabb447" name="Changes" comment="Lagt till tester för hashning, att hashCode returnerar samma hashning för samma position och olika hashning för olika positioner.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/MazeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/maze.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PositionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PositionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +37,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/moarhodin/Downloads/DOI/Robot25/src/test/java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,11 +70,52 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1748356578888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Ny klass PositionTest, ett test för GetX och GetY. Test lyckades.">
+      <created>1748357921213</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1748357921213</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Ny klass PositionTest, ett test för GetX och GetY. Test lyckades.">
+      <created>1748358122273</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1748358122273</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Nya test för att testa om equals fungerar som de ska. Alla test OK">
+      <created>1748358379009</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1748358379009</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Nytt tst för GetPosToNorth fungerar som de ska. Test OK">
+      <created>1748359139465</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1748359139465</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Lagt till texter till de nya testerna.">
+      <created>1748359429007</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1748359429007</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Lagt till tester för hashning, att hashCode returnerar samma hashning för samma position och olika hashning för olika positioner.">
+      <created>1748359918322</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1748359918322</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hej" />
-    <option name="LAST_COMMIT_MESSAGE" value="hej" />
+    <MESSAGE value="Ny klass PositionTest, ett test för GetX och GetY. Test lyckades." />
+    <MESSAGE value="Nya test för att testa om equals fungerar som de ska. Alla test OK" />
+    <MESSAGE value="Nytt tst för GetPosToNorth fungerar som de ska. Test OK" />
+    <MESSAGE value="Lagt till texter till de nya testerna." />
+    <MESSAGE value="Lagt till tester för hashning, att hashCode returnerar samma hashning för samma position och olika hashning för olika positioner." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt till tester för hashning, att hashCode returnerar samma hashning för samma position och olika hashning för olika positioner." />
   </component>
 </project>

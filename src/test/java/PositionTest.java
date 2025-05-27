@@ -78,10 +78,4 @@ public class PositionTest{
         assertNotEquals(p1,p2);
         assertNotEquals(p1.hashCode(), p2.hashCode());
     }
-
-
-
-
-
-
 }

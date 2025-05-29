@@ -19,6 +19,7 @@ public class HomingRobot implements Robot {
     private List<Position> checkedPositions;
 
     /**
+     * Method: HomingRobot
      * Construct a robot in a given maze.
      * @param m the maze the robot should explore
      */
@@ -32,13 +33,15 @@ public class HomingRobot implements Robot {
     }
 
     /**
-     * Move this robot. Tries to move in a random direction.
+     * Move this robot. Tries to move to the positon closest to a goal.
      * Avoids going back from where it came if possible
      */
     @Override
     public void move() {
         ArrayList<Position> movable = getMovableNeighboursForward();
+
         if(!movable.isEmpty()) {
+
             Position nextMove = chooseNextMove(movable);
             pathStack.push(pos);
             pos = nextMove;
@@ -50,13 +53,14 @@ public class HomingRobot implements Robot {
             stepBack();
         }
     }
+
+
+
     /**
-     * Method: ChooseNextMove
      * Description: Chooses the position the robot will move to from the list of accepted moves.
      * @param movable - The list of acceptable moves the robot can take.
      * @return Posiition - Returns the position the robot will move to.
      */
-    //Den här logiken måste göras om den ska väljas
     private Position chooseNextMove(List<Position> movable) {
 
         Position nextPos=null;
@@ -64,6 +68,7 @@ public class HomingRobot implements Robot {
 
         for (int x=0; x< movable.size();x++){
             Position position=movable.get(x);
+
             if(maze.distanceToClosestGoal(position)<distance){
                 distance=maze.distanceToClosestGoal(position);
                 nextPos=position;
@@ -73,7 +78,7 @@ public class HomingRobot implements Robot {
     }
 
     /**
-     * Get the neighbours of the current position that are movable.
+     * Description: Get the neighbours of the current position that are movable.
      * Excludes the position the robot came from
      * @return the available positions
      */
@@ -81,10 +86,11 @@ public class HomingRobot implements Robot {
         ArrayList<Position> movable = new ArrayList<>();
         List<Position> neighbours = getNeighbours();
         for(Position p:neighbours) {
-
             if(maze.isMovable(p)&&!checkedPositions.contains(p)){
                 movable.add(p);
             }
+
+
         }
         return movable;
     }
@@ -95,14 +101,14 @@ public class HomingRobot implements Robot {
     }
 
     /**
-     * Step back to the previous position
+     * Description: Step back to the previous position
      */
     private void stepBack() {
         setPosition(previousPosition);
     }
 
     /**
-     * Get the neighbours of the current position
+     * Description: Get the neighbours of the current position
      * @return a list of the neighbours
      */
     private ArrayList<Position> getNeighbours() {
@@ -115,7 +121,7 @@ public class HomingRobot implements Robot {
     }
 
     /**
-     * Get the current position of the robot
+     * Description: Get the current position of the robot
      * @return the position
      */
 
@@ -124,7 +130,7 @@ public class HomingRobot implements Robot {
     }
 
     /**
-     * Check if the robot has reached the goal
+     * Description: Check if the robot has reached the goal
      * @return true if the robot has reached the goal
      */
     public boolean hasReachedGoal() {

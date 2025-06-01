@@ -74,13 +74,24 @@ public class HomingRobot implements Robot {
         for (int x=0; x< movable.size();x++){
             Position position=movable.get(x);
 
-            if(maze.distanceToClosestGoal(position)<distance){
+            if(positionCloserToGoal(position, distance)){
                 distance=maze.distanceToClosestGoal(position);
                 nextPos=position;
             }
         }
         return nextPos;
     }
+
+    /**
+     * Description: Boolean that checks if the distance to the goal is closer than thee previous distance.
+     * @param p - the neighbour position
+     * @return true if the position is movable and not the previous position
+     */
+    private boolean positionCloserToGoal(Position p,int distance){
+        return maze.distanceToClosestGoal(p)<distance;
+    }
+
+
 
     /**
      * Description: Get the neighbours of the current position that are movable.
@@ -94,7 +105,6 @@ public class HomingRobot implements Robot {
             if(maze.isMovable(p)&&!checkedPositions.contains(p)){
                 movable.add(p);
             }
-
         }
         return movable;
     }

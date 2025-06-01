@@ -17,7 +17,6 @@ public class LeftHandRuleRobot implements Robot {
     private boolean foundWall;
     private Direction direction;
 
-
     /**
      * Description: Construct a robot in a given maze.
      * @param m the maze the robot should explore
@@ -52,26 +51,7 @@ public class LeftHandRuleRobot implements Robot {
 
         //How the robot moves if no wall has been found
         if (foundWall == false) {
-
-            if (!maze.isMovable(left)) {
-                foundWall = true;
-            }
-
-            if (movable.contains(forward)) {
-                setPosition(forward);
-            } else if (movable.contains(right)) {
-                direction = direction.turnRight();
-                setPosition(right);
-                foundWall = true;
-            } else if (movable.contains(left)) {
-                direction = direction.turnLeft();
-                setPosition(left);
-                foundWall = true;
-            } else if (movable.contains(backward)) {
-                direction = direction.turnBackwards();
-                setPosition(backward);
-                foundWall = true;
-            }
+            NoWallFound(movable, forward, right, backward, left);
 
         } else {
             //How the robot moves after finding a wall
@@ -87,6 +67,35 @@ public class LeftHandRuleRobot implements Robot {
                 direction = direction.turnBackwards();
                 setPosition(backward);
             }
+        }
+    }
+
+    /**
+     * Description: How the robot moves if no walls are found.
+     * @param movable - The list of acceptable moves the robot can take.
+     * @param forward - The forward position.
+     * @param right- The right position.
+     */
+    public void NoWallFound(ArrayList<Position> movable, Position forward, Position right, Position backward, Position left){
+
+        if (!maze.isMovable(left)) {
+            foundWall = true;
+        }
+
+        if (movable.contains(forward)) {
+            setPosition(forward);
+        } else if (movable.contains(right)) {
+            direction = direction.turnRight();
+            setPosition(right);
+            foundWall = true;
+        } else if (movable.contains(left)) {
+            direction = direction.turnLeft();
+            setPosition(left);
+            foundWall = true;
+        } else if (movable.contains(backward)) {
+            direction = direction.turnBackwards();
+            setPosition(backward);
+            foundWall = true;
         }
     }
 

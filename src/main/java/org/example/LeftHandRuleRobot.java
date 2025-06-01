@@ -75,6 +75,8 @@ public class LeftHandRuleRobot implements Robot {
      * @param movable - The list of acceptable moves the robot can take.
      * @param forward - The forward position.
      * @param right- The right position.
+     * @param right- The backward position.
+     * @param right- The left position.
      */
     public void NoWallFound(ArrayList<Position> movable, Position forward, Position right, Position backward, Position left){
 

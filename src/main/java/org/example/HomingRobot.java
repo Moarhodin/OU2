@@ -102,12 +102,22 @@ public class HomingRobot implements Robot {
         ArrayList<Position> movable = new ArrayList<>();
         List<Position> neighbours = getNeighbours();
         for(Position p:neighbours) {
-            if(maze.isMovable(p)&&!checkedPositions.contains(p)){
+            if(positionMovableAndNotPrevious(p)){
                 movable.add(p);
             }
         }
         return movable;
     }
+
+    /**
+     * Description: Boolean that checks if the position is movable and not the previous position
+     * @param p - the neighbour position
+     * @return true if the position is movable and not the previous position
+     */
+    private boolean positionMovableAndNotPrevious(Position p){
+        return maze.isMovable(p)&&!checkedPositions.contains(p);
+    }
+
 
     private void setPosition(Position p) {
         previousPosition =pos;

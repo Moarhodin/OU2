@@ -41,11 +41,7 @@ public class HomingRobot implements Robot {
         ArrayList<Position> movable = getMovableNeighboursForward();
 
         if(!movable.isEmpty()) {
-
-            Position nextMove = chooseNextMove(movable);
-            pathStack.push(pos);
-            pos = nextMove;
-            checkedPositions.add(pos);
+            moveForward(movable);
         }
         else if(!pathStack.isEmpty()){
             pos = pathStack.pop();
@@ -54,7 +50,16 @@ public class HomingRobot implements Robot {
         }
     }
 
-
+    /**
+     * Description: Moves the robot to an accepted position.
+     * @param movable - The list of acceptable moves the robot can take.
+     */
+    public void moveForward(ArrayList<Position> movable){
+        Position nextMove = chooseNextMove(movable);
+        pathStack.push(pos);
+        pos = nextMove;
+        checkedPositions.add(pos);
+    }
 
     /**
      * Description: Chooses the position the robot will move to from the list of accepted moves.
@@ -89,7 +94,6 @@ public class HomingRobot implements Robot {
             if(maze.isMovable(p)&&!checkedPositions.contains(p)){
                 movable.add(p);
             }
-
 
         }
         return movable;

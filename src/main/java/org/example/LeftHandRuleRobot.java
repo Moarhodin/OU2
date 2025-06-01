@@ -82,8 +82,7 @@ public class LeftHandRuleRobot implements Robot {
             moveToLeft(left);
             foundWall = true;
         } else if (movable.contains(backward)) {
-            direction = direction.turnBackwards();
-            setPosition(backward);
+            moveBackwards(backward);
             foundWall = true;
         }
     }
@@ -105,8 +104,7 @@ public class LeftHandRuleRobot implements Robot {
         } else if (movable.contains(right)) {
             moveToRight(right);
         } else if (movable.contains(backward)) {
-            direction = direction.turnBackwards();
-            setPosition(backward);
+            moveBackwards(backward);
         }
     }
 
@@ -126,6 +124,15 @@ public class LeftHandRuleRobot implements Robot {
     public void moveToRight(Position right){
         direction = direction.turnRight();
         setPosition(right);
+    }
+
+    /**
+     * Description: Moves the LeftHandRobot to the position behind it and changes the direction.
+     * @param backward - The position behind the robot.
+     */
+    public void moveBackwards(Position backward){
+        direction = direction.turnBackwards();
+        setPosition(backward);
     }
 
     /**

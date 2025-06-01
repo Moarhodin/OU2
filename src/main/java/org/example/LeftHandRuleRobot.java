@@ -106,18 +106,6 @@ public class LeftHandRuleRobot implements Robot {
         }
         return movable;
     }
-    /*private ArrayList<Position> getMovableNeighboursForward() {
-        ArrayList<Position> movable = new ArrayList<>();
-        List<Position> neighbours = getNeighbours();
-        for(Position p:neighbours) {
-
-            if(maze.isMovable(p)&&!p.equals(previousPosition)){
-                movable.add(p)
-            }
-        }
-
-        return movable;
-    }*/
 
     /**
      * Description: This method is used to calculate and get the robot new position based

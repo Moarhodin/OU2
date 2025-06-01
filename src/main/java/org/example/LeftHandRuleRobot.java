@@ -55,18 +55,7 @@ public class LeftHandRuleRobot implements Robot {
 
         } else {
             //How the robot moves after finding a wall
-            if (movable.contains(left)) {
-                direction = direction.turnLeft();
-                setPosition(left);
-            } else if (movable.contains(forward)) {
-                setPosition(forward);
-            } else if (movable.contains(right)) {
-                direction = direction.turnRight();
-                setPosition(right);
-            } else if (movable.contains(backward)) {
-                direction = direction.turnBackwards();
-                setPosition(backward);
-            }
+            WallFound(movable, forward, right, backward, left);
         }
     }
 
@@ -75,8 +64,8 @@ public class LeftHandRuleRobot implements Robot {
      * @param movable - The list of acceptable moves the robot can take.
      * @param forward - The forward position.
      * @param right- The right position.
-     * @param right- The backward position.
-     * @param right- The left position.
+     * @param backward- The backward position.
+     * @param left- The left position.
      */
     public void NoWallFound(ArrayList<Position> movable, Position forward, Position right, Position backward, Position left){
 
@@ -102,9 +91,31 @@ public class LeftHandRuleRobot implements Robot {
     }
 
     /**
+     * Description: How the robot moves if walls are found.
+     * @param movable - The list of acceptable moves the robot can take.
+     * @param forward - The forward position.
+     * @param right- The right position.
+     * @param backward- The backward position.
+     * @param left- The left position.
+     */
+    public void WallFound(ArrayList<Position> movable, Position forward, Position right, Position backward, Position left){
+
+        if (movable.contains(left)) {
+            direction = direction.turnLeft();
+            setPosition(left);
+        } else if (movable.contains(forward)) {
+            setPosition(forward);
+        } else if (movable.contains(right)) {
+            direction = direction.turnRight();
+            setPosition(right);
+        } else if (movable.contains(backward)) {
+            direction = direction.turnBackwards();
+            setPosition(backward);
+        }
+    }
+
+    /**
      * Description: Get the neighbours of the current position that are movable.
-     * Excludes the position the robot came from
-     *
      * @return the available positions
      */
     private ArrayList<Position> getMovableNeighboursForward() {

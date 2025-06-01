@@ -44,7 +44,7 @@ public class HomingRobot implements Robot {
             moveForward(movable);
         }
         else if(!pathStack.isEmpty()){
-            pos = pathStack.pop();
+            moveBackwards();
         }else{
             stepBack();
         }
@@ -59,6 +59,13 @@ public class HomingRobot implements Robot {
         pathStack.push(pos);
         pos = nextMove;
         checkedPositions.add(pos);
+    }
+
+    /**
+     * Description: Moves the robot backwards (previous position).
+     */
+    public void moveBackwards(){
+        pos=pathStack.pop();
     }
 
     /**
@@ -91,8 +98,6 @@ public class HomingRobot implements Robot {
         return maze.distanceToClosestGoal(p)<distance;
     }
 
-
-
     /**
      * Description: Get the neighbours of the current position that are movable.
      * Excludes the position the robot came from
@@ -117,7 +122,6 @@ public class HomingRobot implements Robot {
     private boolean positionMovableAndNotPrevious(Position p){
         return maze.isMovable(p)&&!checkedPositions.contains(p);
     }
-
 
     private void setPosition(Position p) {
         previousPosition =pos;
